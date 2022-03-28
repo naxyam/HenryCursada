@@ -2,33 +2,35 @@
 
 function BinarioADecimal(num) {
   // tu codigo aca
-  function binarioADecimal(binario){
+  
     let sum = 0;
 
-    for (let i=0; i< binario.length; i++){
-        sum += binario[i]*2**(binario.length -1 -i);
+    for (let i=0; i< num.length; i++){
+        sum += num[i]*2**(num.length -1 -i);
     }
-    return sum;    
-}
+    return sum    
 }
 
+
 function DecimalABinario(num) {
-  function decimalABinario(decimal){
+  
 
     let Vdecimal = [];
 
-    while(decimal>1) {
-        Vdecimal.unshift(decimal%2);
-        decimal = Math.floor(decimal/2);
+    while(num>1) {
+        Vdecimal.unshift(num%2);
+        num = Math.floor(num/2);
 
     }
-    Vdecimal.unshift(decimal);
-    return Vdecimal;
+    Vdecimal.unshift(num);
+      let decimal =""
+       decimal =  Vdecimal.join("");
+      return decimal;
 
     }
    
 
-}
+
 
 
 module.exports = {
