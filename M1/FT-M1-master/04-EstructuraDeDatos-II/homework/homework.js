@@ -67,7 +67,7 @@ LinkedList.prototype.add = function(data){//agregar a la lista
       current.next = null;
       this.dismlargo;
       return eliminado;
-  }
+  };
 
 
 
